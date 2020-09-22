@@ -9,3 +9,12 @@ function countSheep(sheep) {
   }
 }
 countSheep(5);
+
+function powerCalculator(base, exp) {
+  let product = 1;
+  for (let i = 0; i < exp; i++) {
+    product = product * base;
+    console.log('Product:', product);
+  }
+}
+powerCalculator(10,2);
