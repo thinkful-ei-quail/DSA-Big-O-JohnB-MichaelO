@@ -1,0 +1,35 @@
+/*
+1. What is the Big O for this?
+  1) O(1)
+  2) O(n) 
+
+2. Even or odd
+  O(1) The time to complete the function does not increace despite how large of an input is given.
+
+3. Are you here?
+  O(n^2) The time increases with polynomial time because there are two levels of looping
+
+4. Doubler
+  O(n) The time increases linearly since there is only one level of looping.
+
+5. Naive search
+  O(n) The time increases linearly since there is only one level of looping.
+
+6. Creating pairs:
+  O(n^2) The time increases with polynomial time because there are two levels of looping
+
+7. Compute the sequence
+  O(n) The time increases linearly since there is only one level of looping.
+
+8. An efficient search
+  O(log(n)) This function is more efficient in time complexity because it repeatedly splits the problem in half
+
+9. Random element
+  O(1) The time to complete the function does not increace despite how large of an input is given.
+
+10. What Am I?
+  It determines if a given number is prime. 
+  O(n) The time increases linearly since there is only one level of looping.
+
+11. Tower of Hanoi
+  O(2^n) The time increases exponentially based on input because it uses recursion.
