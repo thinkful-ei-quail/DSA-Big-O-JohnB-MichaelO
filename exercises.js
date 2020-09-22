@@ -17,4 +17,14 @@ function powerCalculator(base, exp) {
     console.log('Product:', product);
   }
 }
-powerCalculator(10,2);
+powerCalculator(10, 2);
+
+
+function reverseString(str) {
+  let revStr = '';
+  for (let i = str.length - 1; i >= 0; i--){
+    revStr = revStr + str[i];    
+  }
+  return revStr;
+}
+console.log(reverseString('hello'));
