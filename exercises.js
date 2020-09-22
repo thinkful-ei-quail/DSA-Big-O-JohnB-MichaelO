@@ -40,3 +40,32 @@ function triangleNumber(n) {
 triangleNumber(5);
 triangleNumber(3);
 triangleNumber(10);
+
+//Alternate
+function fibonacci(num) {
+  if (num === 1 || num === 2) return 1;
+  let prevNum1 = 1;
+  let prevNum2 = 1;
+  let answer = 1;
+  let sequence = [prevNum1, prevNum2];
+  for (let i = 2; i < num; i++) {
+    prevNum2 = prevNum1;
+    prevNum1 = answer;
+    answer = prevNum1 + prevNum2;
+    sequence.push(answer);
+  }
+  return sequence;
+}
+console.log(fibonacci(2));
+
+//Alternate
+function factorial(num) {
+  let current = num;
+  let answer = 1;
+  while (current > 0) {
+    answer *= current;
+    current--;
+  }
+  return answer;
+}
+console.log(factorial(0));
