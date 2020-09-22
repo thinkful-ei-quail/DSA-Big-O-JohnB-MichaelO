@@ -40,3 +40,53 @@ function triangleNumber(n) {
 triangleNumber(5);
 triangleNumber(3);
 triangleNumber(10);
+
+function stringSplitter(str, separator) {
+  let splitStr = []
+  let letterTracker = ''
+  for(let i = 0; i < str.length; i++) {
+    if(str[i] === separator) {
+      splitStr.push(letterTracker)
+      letterTracker = ''
+    } else if(i === str.length - 1){
+      letterTracker = letterTracker + str[i]
+      splitStr.push(letterTracker)
+    } else {
+      letterTracker = letterTracker + str[i]
+    }
+  }
+  return splitStr
+}
+
+console.log(stringSplitter('02/20/2020/1234/3234/567/355', '/'))
+
+function makeFibonacci(num) {
+  let prevNum1 = 0
+  let prevNum2 = 0
+  let fibArr = []
+  for(let i = 1; i <= num; i++) {
+    if(prevNum1 === 0 && prevNum2 === 0) {
+      fibArr.push('1')
+      prevNum1 = 1
+    } else {
+      fibArr.push(prevNum2 + prevNum1)
+      let temp = prevNum1
+      prevNum1 = prevNum2 + prevNum1
+      prevNum2 = temp
+     
+    }
+  }
+  return fibArr.join(',')
+}
+
+console.log(makeFibonacci(7))
+
+function calcFactorial(num) {
+  let product = 1
+  for(let i = 1; i <= num; i++) {
+    product = product * i
+  }
+  return product
+}
+
+console.log(calcFactorial(0))
