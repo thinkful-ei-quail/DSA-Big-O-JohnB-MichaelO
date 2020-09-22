@@ -69,6 +69,8 @@ function factorial(num) {
   return answer;
 }
 console.log(factorial(0));
+
+
 function stringSplitter(str, separator) {
   let splitStr = [];
   let letterTracker = '';
@@ -85,7 +87,6 @@ function stringSplitter(str, separator) {
   }
   return splitStr;
 }
-
 console.log(stringSplitter('02/20/2020/1234/3234/567/355', '/'));
 
 function makeFibonacci(num) {

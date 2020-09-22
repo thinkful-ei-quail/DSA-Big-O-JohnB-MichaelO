@@ -32,4 +32,10 @@
   O(n) The time increases linearly since there is only one level of looping.
 
 11. Tower of Hanoi
-  O(2^n) The time increases exponentially based on input because it uses recursion.
+  O(2^n) The time increases exponentially based on input because it uses
+  recursion.
+  
+  
+  
+14. Iterative Big 0
+  O(n) All functions have a linear time complexity 0(n) 
