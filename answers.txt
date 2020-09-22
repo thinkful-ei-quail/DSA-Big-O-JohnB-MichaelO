@@ -35,7 +35,9 @@
   O(2^n) The time increases exponentially based on input because it uses
   recursion.
   
-  
+13. countSheep, powerCalculator, reverseString, triangleNumber, stringSplitter,
+and factorial, toBinary, makeAnagrams are O(n), fibonacci is O(n^2), mazeRunner and
+findAllPaths is O(3^n), printOrgChart is O(2^n) 
   
 14. Iterative Big 0
   O(n) All functions have a linear time complexity 0(n) 
